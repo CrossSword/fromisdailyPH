@@ -28,7 +28,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-image: url('https://pbs.twimg.com/media/FyvAkhdaQAEBWRQ?format=jpg&name=large');
+            background-image: url('https://pbs.twimg.com/media/F0a-8xTaEAAnWxt?format=jpg&name=4096x4096');
             background-size: cover;
             background-position: center;
         }
@@ -173,7 +173,7 @@
                 .then(response => response.json())
                 .then(data => {
                     if (data.message === "Message created successfully") {
-                        alert("Message created successfully"); // Display pop-up message
+                        alert("Message submitted successfully"); // Display pop-up message
                         // Reset form inputs
                         document.getElementById('messageForm').reset();
                     } else {

@@ -136,8 +136,8 @@
                 <input type="text" class="form-control" name="name" required>
             </div>
             <div class="mb-3">
-                <label class="form-label">Bias</label>
-                <select name="bias member" class="form-select">
+                <label class="form-label">Bias Member</label>
+                <select name="bias" class="form-select">
                     <option selected disabled>Choose...</option>
                     <option value="Lee Saerom">Lee Saerom</option>
                     <option value="Song Hayoung">Song Hayoung</option>

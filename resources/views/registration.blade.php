@@ -1,7 +1,7 @@
 @extends('layout')
 @section('title', 'CSE Registration')
 @section('content')
-
+    <!-- changes from htdocs-main -->
     <!-- Name, Email, Contact Number, Twitter username, Facebook link, ticket type (walkin or not), image submission (proof of payment) -->
     <div>
         <form action="{{ route('registrationPost') }}" method="POST" class="ms-auto me-auto mt-auto" style="width: 500px"

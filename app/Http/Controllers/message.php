@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\fromisMessage;
+<<<<<<< HEAD
 use App\Models\registration_cse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -17,11 +18,26 @@ class message extends Controller
             'message' => 'required'
         ]);
 
+=======
+use Illuminate\Http\Request;
+
+
+class message extends Controller
+{
+    public function messagePost(Request $request) {
+        $request->validate([
+            'name' => 'required',
+            'bias' => 'required', 
+            'message' => 'required'
+        ]);
+    
+>>>>>>> 06e04488236b8178da2f959b44205e0df2a21413
         $data = [
             'name' => $request->input('name'),
             'bias' => $request->input('bias'),
             'message' => $request->input('message')
         ];
+<<<<<<< HEAD
 
         $fromis_message = fromisMessage::create($data);
 
@@ -99,4 +115,13 @@ class message extends Controller
     {
         return view('registration');
     }
+=======
+    
+        $fromis_message = fromisMessage::create($data);
+    
+        // You might want to return a response indicating success or failure
+        return response()->json(['message' => 'Message created successfully'], 201);
+    }
+    
+>>>>>>> 06e04488236b8178da2f959b44205e0df2a21413
 }

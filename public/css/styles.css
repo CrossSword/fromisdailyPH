@@ -1,0 +1,293 @@
+/* Fromis_9 Theme CSS */
+
+/* Card css */
+.card {
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Transparent white background */
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #000000;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #ff2d20;
+    border-color: #ff2d20;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://pbs.twimg.com/media/F0a-8xTaEAAnWxt?format=jpg&name=4096x4096');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Background color with opacity for better readability */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* Center the content */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff2d20;
+    /* Fromis_9 red color */
+}
+
+.navbar {
+    list-style: none;
+}
+
+/* Form Styles */
+form {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Adjust the alpha value */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+select {
+    width: calc(100% - 20px);
+    /* Adjusted width calculation */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px); 
+}
+
+/* Custom CSS for header */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensure it's above other content */
+    background-color: #fff;
+    /* Set background color */
+    padding: 10px 20px;
+    /* Adjust padding */
+}
+
+.navbar-nav {
+    display: inline-block;
+}
+
+.navbar-nav .nav-item {
+    display: inline-block;
+    margin-right: 20px;
+    /* Adjust spacing between links */
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    /* Set link color */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 16px;
+    /* Adjust font size */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff2d20;
+    /* Change color on hover */
+}
+
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 150px;
+    /* Set the height for the message box */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff2d20;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #d62919;
+    /* Darker shade of red */
+}
+
+/* Custom CSS for CSE Registration form */
+
+/* Form container */
+.form-container-custom {
+    max-width: 500px;
+    margin: 50px auto 20px;
+    /* Adjusted margin-top to 50px */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Increased opacity for better readability */
+}
+
+/* Form input fields */
+.form-control-custom {
+    width: 100%;
+    /* Adjusted to full width */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 20px;
+    /* Increased margin bottom for better spacing */
+}
+
+/* Form label */
+.form-label-custom {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Flex container for form rows */
+.form-row-custom {
+    display: flex;
+    flex-direction: column;
+    /* Make the layout vertical */
+    margin-bottom: 20px;
+}
+
+/* Flex item for form input */
+.form-input-custom {
+    flex: 1;
+    /* Take remaining space */
+}
+
+/* Radio button styles */
+.form-check-input-custom {
+    margin-right: 10px;
+}
+
+/* Error message style */
+.text-danger-custom {
+    color: #ff0000;
+    font-size: 14px;
+}
+
+/* Submit button style */
+.btn-submit-custom {
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-submit-custom:hover {
+    background-color: #0056b3;
+}
+
+/* Ticket Type Selector */
+.ticket-type-container {
+    margin-bottom: 20px;
+}
+
+.ticket-type-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    display: block;
+}
+
+.ticket-type-options {
+    display: flex;
+    /* Use flexbox */
+    align-items: center;
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line */
+}
+
+.ticket-type-option {
+    margin-right: 20px;
+    display: flex;
+    /* Use flexbox */
+    align-items: center;
+}
+
+.ticket-type-option input[type="radio"] {
+    margin-right: 5px;
+}
+
+.ticket-type-option label {
+    margin-bottom: 0;
+}

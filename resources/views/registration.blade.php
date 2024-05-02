@@ -5,7 +5,7 @@
     <!-- Name, Email, Contact Number, Twitter username, Facebook link, ticket type (walkin or not), image submission (proof of payment) -->
     <div>
         <form action="{{ route('registrationPost') }}" method="POST" class="ms-auto me-auto mt-auto" style="width: 500px"
-            id="registrationForm">
+            id="registrationForm" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
                 <label class="form-label-custom">Name</label>
@@ -32,22 +32,19 @@
             <!-- Ticket Type Selector -->
             <div class="mb-3">
                 <label class="form-label-custom">Ticket Type</label>
-                <div class="form-check-custom">
-                    <input class="form-check-input-custom" type="radio" name="ticket_type" id="walkinTicket"
-                        value="walkin">
-                    <label class="form-check-label-custom" for="walkinTicket">Walkin</label>
-                </div>
-                <div class="form-check-custom">
-                    <input class="form-check-input-custom" type="radio" name="ticket_type" id="nonWalkinTicket"
-                        value="non-walkin">
-                    <label class="form-check-label-custom" for="nonWalkinTicket">Non-Walkin</label>
+                <div class="dropdown">
+                    <select name="ticket_type" class="form-select">
+                        <option selected disabled>Choose...</option>
+                        <option value="non-walkin">Non-Walkin</option>
+                    </select>
                 </div>
             </div>
 
             <!-- Image Submission -->
             <div class="mb-3">
                 <label for="formFile" class="form-label-custom">Proof of payment</label>
-                <input class="form-control-custom" type="file" id="formFile">
+                <input class="form-control-custom" type="file" name="proof_of_payment" id="formFile" accept="image/*" required>
+                <div id="fileError" class="text-danger-custom"></div> <!-- Display file type error message -->
             </div>
 
             <!-- Submit Button -->
@@ -58,6 +55,16 @@
     <script>
         document.getElementById('registrationForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent default form submission
+
+            // Validate file type
+            let fileInput = document.getElementById('formFile');
+            let file = fileInput.files[0];
+            if (!file || !file.type.startsWith('image/')) {
+                document.getElementById('fileError').textContent = 'Please select an image file.';
+                return;
+            } else {
+                document.getElementById('fileError').textContent = '';
+            }
 
             // Perform form submission via AJAX
             let formData = new FormData(this);

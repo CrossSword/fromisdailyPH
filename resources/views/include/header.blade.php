@@ -11,6 +11,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('messagePost') }}">KWave Message Box</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('adminGet') }}">Admin Login</a>
+                </li>
             </div>
         </div>
     </div>

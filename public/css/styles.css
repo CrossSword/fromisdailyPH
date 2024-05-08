@@ -52,8 +52,6 @@ body {
     background-position: center;
 }
 
-
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -95,7 +93,6 @@ form {
     margin-top: 20px;
 }
 
-
 label {
     display: block;
     margin-bottom: 10px;
@@ -111,49 +108,6 @@ select {
     border-radius: 5px;
     box-sizing: border-box;
 }
-
-input[type="text"] {
-    width: calc(100% - 20px); 
-}
-
-/* Custom CSS for header */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    /* Ensure it's above other content */
-    background-color: #fff;
-    /* Set background color */
-    padding: 10px 20px;
-    /* Adjust padding */
-}
-
-.navbar-nav {
-    display: inline-block;
-}
-
-.navbar-nav .nav-item {
-    display: inline-block;
-    margin-right: 20px;
-    /* Adjust spacing between links */
-}
-
-.navbar-nav .nav-link {
-    color: #333;
-    /* Set link color */
-    text-decoration: none;
-    /* Remove underline */
-    font-size: 16px;
-    /* Adjust font size */
-}
-
-.navbar-nav .nav-link:hover {
-    color: #ff2d20;
-    /* Change color on hover */
-}
-
 
 textarea {
     width: 100%;
@@ -290,87 +244,4 @@ button:hover {
 
 .ticket-type-option label {
     margin-bottom: 0;
-}
-
-/* styles.css */
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-}
-
-h2 {
-    color: #333;
-}
-
-h3 {
-    color: #666;
-    margin-top: 20px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    background-color: #fff;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-li:hover {
-    background-color: #f5f5f5;
-}
-
-label {
-    font-weight: bold;
-}
-
-.form-control {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.form-control-custom {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.btn-submit-custom {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-submit-custom:hover {
-    background-color: #0056b3;
-}
-
-.text-danger-custom {
-    color: #ff0000;
-}
-
-.dropdown {
-    width: 100%;
-}
-
-.form-select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    cursor: pointer;
 }

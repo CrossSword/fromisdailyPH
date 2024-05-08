@@ -13,7 +13,6 @@
                 <label class="form-label">Password</label>
                 <input type="password" class="form-control" name="password" id="password">
             </div>
-            <!-- Submit button for the form -->
             <button type="submit" class="btn btn-primary" onclick="validateForm()">Submit</button>
         </form>
     </div>

@@ -85,7 +85,7 @@ class message extends Controller
                 'twitter_username' => $request->twitter_username,
                 'facebook_link' => $request->facebook_link,
                 'ticket_type' => $request->ticket_type,
-                'proof_of_payment' => $filename, // Save the filename
+                'proof_of_payment' => $filename, // Saves the filename
             ]);
 
             // Redirect back with success message

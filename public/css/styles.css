@@ -245,3 +245,54 @@ button:hover {
 .ticket-type-option label {
     margin-bottom: 0;
 }
+
+/* Admin Page Styles */
+
+/* Form input fields */
+.admin-form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 20px;
+    /* Add margin-bottom for spacing */
+}
+
+/* Form input fields */
+.admin-form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Form label */
+.admin-form-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Submit button style */
+.admin-btn-submit {
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    /* Add margin-top for spacing */
+}
+
+.admin-btn-submit:hover {
+    background-color: #0056b3;
+}

@@ -28,8 +28,6 @@
                 </li>
             @endforeach
         </ul>
-
-
         <h3>Messages</h3>
         <ul style="list-style-type: none;">
             @foreach ($messages as $message)

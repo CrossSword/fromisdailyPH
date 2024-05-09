@@ -2,18 +2,17 @@
 @section('title', 'Admin Page')
 @section('content')
     <div>
-        <form action="{{ route('adminPost') }}" method="POST" class="ms-auto me-auto mt-auto" style="width: 500px"
-            id="loginForm">
+        <form action="{{ route('adminPost') }}" method="POST" class="admin-form" id="loginForm">
             @csrf
-            <div class="mb-3">
-                <label for="form-label">Username</label>
-                <input type="name" class="form-control" name="name" id="name">
+            <div class="admin-form-group">
+                <label for="name" class="admin-form-label">Username</label>
+                <input type="name" class="admin-form-control" name="name" id="name">
             </div>
-            <div class="mb-3">
-                <label class="form-label">Password</label>
-                <input type="password" class="form-control" name="password" id="password">
+            <div class="admin-form-group">
+                <label for="password" class="admin-form-label">Password</label>
+                <input type="password" class="admin-form-control" name="password" id="password">
             </div>
-            <button type="submit" class="btn btn-primary" onclick="validateForm()">Submit</button>
+            <button type="submit" class="admin-btn-submit">Submit</button>
         </form>
     </div>
 @endsection
